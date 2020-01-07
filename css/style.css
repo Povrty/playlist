@@ -1,0 +1,36 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #212121;
+}
+
+.title {
+    font-size: 75px;
+    color: #1ed760;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+}
+
+.button {
+    padding: 25px;
+}
+
+.addSong {
+    border: none;
+    background-color: #1DB954;
+    padding: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    color: c0c0c0;
+}
+
+.songList {
+    color: white;
+}
