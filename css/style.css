@@ -1,5 +1,6 @@
 html {
     font-family: 'Lato', sans-serif;
+    color: white;
 }
 
 body {
@@ -31,6 +32,13 @@ hr {
     color: c0c0c0;
 }
 
-.songList {
+.songLists {
     color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
