@@ -1,22 +1,43 @@
 let songList = [];
 let artistList = [];
 let lengthList = [];
-let imageURLs = [];
+let imageURL = [];
 let linkList = [];
 
 $(".addSong").click(function(){
     // Song Name:
     var songName = $(".songName").val();
         songList.push(songName);
-        $(".songLists").empty();
+        $(".songList").empty();
         songList.forEach(function(songs){
-            $(".songLists").append("<li>" + songs + "</li>");
+            $(".songList").append("<li>" + songs + "</li>");
         })
     // Artist Name:
     var artistName = $(".artistName").val();
         artistList.push(artistName);
-        $(".artistLists").empty();
+        $(".artistList").empty();
         artistList.forEach(function(artists){
-            $(".artistLists").append("<li>" + artists + "</li>");
+            $(".artistList").append("<li>" + artists + "</li>");
+        })
+    // Song Length:
+    var songLength = $(".songLength").val();
+        lengthList.push(songLength);
+        $(".lengthList").empty();
+        lengthList.forEach(function(lengths){
+            $(".lengthList").append("<li>" + lengths + "</li>");
+        })   
+    // Image URL:
+    var imgURL = $(".imgURL").val();
+        imageURL.push(imgURL);
+        $(".imageURL").empty();
+        imageURL.forEach(function(images){
+            $(".imageURL").append("<li>" + images + "</li>");
+        })
+    // Song Link
+    var songLink = $(".songLink").val();
+        linkList.push(songLink);
+        $(".linkList").empty();
+        linkList.forEach(function(links){
+            $(".linkList").append("<li>" + links + "</li>");
         })
 });
