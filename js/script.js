@@ -5,13 +5,21 @@ let imageURL = [];
 let linkList = [];
 
 $(".addSong").click(function(){
-    // Song Name:
+    /*Song Name:
     var songName = $(".songName").val();
         songList.push(songName);
         $(".songList").empty();
         songList.forEach(function(songs){
             $(".songList").append("<li>" + songs + "</li>");
         })
+    */
+    let song {
+        song_name: "Song1",
+        artist_name: "Mr. Song",
+        song_length: "3:00",
+        image_URL: "",
+        song_Link: "",
+    }
     // Artist Name:
     var artistName = $(".artistName").val();
         artistList.push(artistName);
