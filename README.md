@@ -38,22 +38,22 @@ In this unit, coders will create the classic game of tic tac toe in their browse
 
 ## JavaScript
 - [x] Comment out your code that refers to arrays
-- [ ] Create Objects in your playlist project that hold all your song information
-- [ ] Combine all your Objects into one array
+- [x] Create Objects in your playlist project that hold all your song information
+- [x] Combine all your Objects into one array
 
 #### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Day 4
 
 ## JavaScript
 
-- [ ] Update your .push() method based on your new array of Objects
-- [ ] Update your loop based on your new array of Objects
-- [ ] Finish refactoring your playlist project
+- [x] Update your .push() method based on your new array of Objects
+- [x] Update your loop based on your new array of Objects
+- [x] Finish refactoring your playlist project
 
 #### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Project Extensions:
 - [ ] Add in your own CSS to personalize your project

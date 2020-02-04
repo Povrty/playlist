@@ -1,6 +1,11 @@
 html {
     font-family: 'Lato', sans-serif;
     color: white;
+    list-style: none;
+}
+
+#logo {
+    width: 50%;
 }
 
 body {
@@ -8,13 +13,16 @@ body {
     background-color: #212121;
 }
 
-.title {
+.top {
     font-size: 75px;
     color: #1ed760;
 }
 
 input {
     font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .button {
@@ -24,12 +32,15 @@ input {
 .addSong {
     border: none;
     background-color: #1DB954;
-    padding: 25px;
+    padding: 10px 20px;
     font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    color: white;
 }
 
 hr {
-    color: c0c0c0;
+    color: #c0c0c0;
+    width: 75%;
 }
 
 .songLists {
@@ -41,4 +52,8 @@ hr {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.pIMG {
+    width: 10px;
 }
