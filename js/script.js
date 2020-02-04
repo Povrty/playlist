@@ -3,49 +3,48 @@ let artistList = [];
 let lengthList = [];
 let imageURL = [];
 let linkList = [];
+let song = {
+}
+
+function addName(){
+    let songName = $(".songName").val();
+    song.song_name = songName;
+    console.log(song.song_name);
+    $(".songList").append("<li>" + song.song_name + "</li>");
+}
+
+function addArtist(){
+    let artistName = $(".artistName").val();
+    song.artist_name = artistName;
+    console.log(song.artist_name);
+    $(".songList").append("<li>" + song.artist_name + "</li>");   
+}
+
+function addLength(){
+    let songLength = $(".songLength").val();
+    song.song_length = songLength;
+    console.log(song.song_length);
+    $(".songList").append("<li>" + song.song_length + "</li>");
+}
+
+function addURL(){
+    let imgURL = $(".imgURL").val();
+    song.image_URL = imgURL;
+    console.log(song.image_URL);
+    $(".songList").append("<li>" + song.image_URL + "</li>");
+}
+
+function addLink(){
+    let songLink = $(".songLink").val();
+    song.song_Link = songLink;
+    console.log(song.song_Link);
+    $(".songList").append("<li>" + song.song_Link + "</li>");
+}
 
 $(".addSong").click(function(){
-    /*Song Name:
-    var songName = $(".songName").val();
-        songList.push(songName);
-        $(".songList").empty();
-        songList.forEach(function(songs){
-            $(".songList").append("<li>" + songs + "</li>");
-        })
-    */
-    let song {
-        song_name: "Song1",
-        artist_name: "Mr. Song",
-        song_length: "3:00",
-        image_URL: "",
-        song_Link: "",
-    }
-    // Artist Name:
-    var artistName = $(".artistName").val();
-        artistList.push(artistName);
-        $(".artistList").empty();
-        artistList.forEach(function(artists){
-            $(".artistList").append("<li>" + artists + "</li>");
-        })
-    // Song Length:
-    var songLength = $(".songLength").val();
-        lengthList.push(songLength);
-        $(".lengthList").empty();
-        lengthList.forEach(function(lengths){
-            $(".lengthList").append("<li>" + lengths + "</li>");
-        })   
-    // Image URL:
-    var imgURL = $(".imgURL").val();
-        imageURL.push(imgURL);
-        $(".imageURL").empty();
-        imageURL.forEach(function(images){
-            $(".imageURL").append("<li>" + images + "</li>");
-        })
-    // Song Link
-    var songLink = $(".songLink").val();
-        linkList.push(songLink);
-        $(".linkList").empty();
-        linkList.forEach(function(links){
-            $(".linkList").append("<li>" + links + "</li>");
-        })
+    addName();
+    addArtist();
+    addLength();
+    addURL();
+    addLink();
 });
