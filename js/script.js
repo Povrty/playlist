@@ -5,21 +5,21 @@ function addName(){
     let songName = $(".songName").val();
     song.song_name = songName;
     console.log(song.song_name);
-    $(".songList").append("<li>" + song.song_name + "</li>");
+    $(".songList").append("<li>" + song.song_name + "</li> <div><hr class='hr'></div>");
 }
 
 function addArtist(){
     let artistName = $(".artistName").val();
     song.artist_name = artistName;
     console.log(song.artist_name);
-    $(".artistList").append("<li>" + song.artist_name + "</li>");   
+    $(".artistList").append("<li>" + song.artist_name + "</li> <div><hr class='hr'></div>");   
 }
 
 function addLength(){
     let songLength = $(".songLength").val();
     song.song_length = songLength;
     console.log(song.song_length);
-    $(".lengthList").append("<li>" + song.song_length + "</li>");
+    $(".lengthList").append("<li>" + song.song_length + "</li> <div><hr class='hr'></div>");
 }
 
 /*
@@ -38,15 +38,10 @@ function addLink(){
 }
 */
 
-function hr(){
-    $("body").append("<div><hr></div>");
-}
-
 $(".addSong").click(function(){
     addName();
     addArtist();
     addLength();
     //addURL();
     //addLink();
-    hr();
 });
